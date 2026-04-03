@@ -3,12 +3,7 @@ import 'package:flutter/material.dart';
 class ProductDetailScreen extends StatelessWidget {
   final String productId;
   final String? category;
-
-  const ProductDetailScreen({
-    super.key,
-    required this.productId,
-    this.category,
-  });
+  const ProductDetailScreen({required this.productId, this.category, super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +15,7 @@ class ProductDetailScreen extends StatelessWidget {
           children: [
             Text('Product ID: $productId'),
             const SizedBox(height: 10),
-            Text('Category: ${category ?? 'None'}'),
+            Text('Category: ${category ?? "N/A"}'),
           ],
         ),
       ),

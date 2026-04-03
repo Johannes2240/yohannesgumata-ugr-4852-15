@@ -15,20 +15,12 @@ class HomeScreen extends StatelessWidget {
             const Text('Home Screen'),
             const SizedBox(height: 20),
             ElevatedButton(
-              onPressed: () => context.goNamed('settings'),
-              child: const Text('Go to Settings (Named)'),
-            ),
-            const SizedBox(height: 20),
-            ElevatedButton(
-              onPressed: () {
-                // Instruction 5.2: Named navigation with maps
-                context.goNamed(
-                  'productDetail',
-                  pathParameters: {'id': '123'},
-                  queryParameters: {'category': 'shoes'},
-                );
-              },
-              child: const Text('View Product 123 (Shoes) - Named'),
+              onPressed: () => context.goNamed(
+                'productDetail',
+                pathParameters: {'id': '123'},
+                queryParameters: {'category': 'shoes'},
+              ),
+              child: const Text('View Product'),
             ),
           ],
         ),
