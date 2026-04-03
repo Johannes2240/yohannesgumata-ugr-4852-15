@@ -7,12 +7,12 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Home')),
+      appBar: AppBar(title: const Text('Path Parameter Lab')),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Text('Home Screen'),
+            const Text('Dynamic Routing & Query Params'),
             const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () => context.go('/product/123?category=shoes'),

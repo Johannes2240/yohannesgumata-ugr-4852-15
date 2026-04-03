@@ -7,12 +7,12 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Home')),
+      appBar: AppBar(title: const Text('Named Router Lab')),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Text('Home Screen'),
+            const Text('Type-Safe Named Routing'),
             const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () => context.goNamed(
